@@ -390,3 +390,28 @@ html {
 *, *::before, *::after {
     box-sizing: inherit
 }
+body {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color:black;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header_nav {
+    border-bottom: 2px solid #828282;
+}
+
+.header_list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
