@@ -399,6 +399,8 @@ body {
     color:black;
 }
 
+/* navigation menu */
+
 .wrapper {
     max-width: 940px;
     margin: 0 auto;
@@ -406,12 +408,98 @@ body {
 
 .header_nav {
     border-bottom: 2px solid #828282;
+    margin-bottom: 40px;
 }
 
 .header_list {
     display: flex;
     justify-content: space-between;
+}
+
+.header_item {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+.header_link {
+    text-decoration: none;
+    color: #828282;
+}
+
+.header_link:hover{
+    color: black;
+}
+
+/* navigation menu end */
+
+/* intro */
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.intro_info {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 100px;
+}
+
+.intro_den_p {
+    font-size: 47px;
+}
+
+.intro_lang_p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.intro_lang {
+    display: flex;
+}
+
+.intro_lang_choose {
+    text-decoration: none;
+    color: #828282;
+}
+
+.header_photo {
+    margin-bottom: 104px;
+}
+
+/* intro end*/
+
+/* about me */
+
+.about {
+    background: #F6F6F6;
+}
+
+.wrapper_about {
+    text-align:  center;
+}
+
+.about_h2 {
+    font-size: 34px;
+    margin-bottom: 17px;
+    padding-top: 120px;
+}
+
+.about_paragraph {
+    margin-bottom: 17px;
+}
+
+.last_paragraph {
+    padding-bottom: 107px;
+}
+
+/* about me end */
+
+
+
+
+
+
+
 
