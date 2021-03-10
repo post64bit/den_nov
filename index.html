@@ -12,24 +12,28 @@
         <div class="wrapper">
             <nav class="header_nav">
                 <ul class="header_list">
-                    <a href="#!" class="header_link">
+                    <a href="#home" class="header_link">
                         <li class="header_item"><p>Home</p></li>
                     </a>
-                    <a href="#!" class="header_link">
+                    <a href="#aboutme" class="header_link">
                         <li class="header_item"><p>About me</p></li>
                     </a>
-                    <a href="#!" class="header_link">
+                    <a href="#skills" class="header_link">
                         <li class="header_item"><p>Skills</p></li>
                     </a>
-                    <a href="#!" class="header_link">
+                    <a href="#portfolio" class="header_link">
                         <li class="header_item"><p>Portfolio</p></li>
                     </a>
-                    <a href="#!" class="header_link">
+                    <a href="#contacts" class="header_link">
                         <li class="header_item"><p>Contacts</p></li>
                     </a>
                 </ul>
             </nav>
-            <div class="intro">
+        </div>
+    </header>
+    <section class="first_section">
+        <div class="wrapper">
+            <div class="intro" id="home">
                 <div class="intro_den">
                     <h1 class="intro_den_p">Denis<br>Novik</h1>
                 </div>
@@ -42,8 +46,8 @@
             </div>
             <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
         </div>
-    </header>
-    <section class="about">
+    </section>
+    <section class="about" id="aboutme">
         <div class="wrapper_about">
             <h2 class="about_h2">About me</h2>
             <p class="about_text">
@@ -58,5 +62,59 @@
             </p>
         </div>
     </section>
+    <section class="skills" id="skills">
+        <h2 class="skills_h2">Skills</h2>
+        <p class="skills_p">I work in such programs as</p>
+        <div class="wrapper">
+            <div class="programs_sills">
+                <div class="programs_sills_item">
+                    <p class="progam_img"><img src="./img/svg/prog1.svg" alt="Photoshop"></p>
+                    <p class="progam_p">Adobe<br>Photoshop</p>
+                    <img src="./img/svg/photoshop_stars.svg" alt="photoshop skills" class="program_stars">
+                </div>
+                <div class="programs_sills_item">
+                    <p class="progam_img"><img src="./img/svg/prog2.svg" alt="Illustrator"></p>
+                    <p class="progam_p">Adobe<br>Illustrator</p>
+                    <img src="./img/svg/photoshop_stars.svg" alt="photoshop skills" class="program_stars">
+                </div>
+                <div class="programs_sills_item">
+                    <p class="progam_img"><img src="./img/svg/prog3.svg" alt="After Effects"></p>
+                    <p class="progam_p">Adobe<br>After Effects</p>
+                    <img src="./img/svg/photoshop_stars.svg" alt="photoshop skills" class="program_stars">
+                </div>
+                <div class="programs_sills_item">
+                    <p class="progam_img"><img src="./img/svg/prog4.svg" alt="Figma"></p>
+                    <p class="progam_p">Figma<br>&#12288</p>  <!-- symbol &#12288 ! ! ! --> 
+                    <img src="./img/svg/photoshop_stars.svg" alt="photoshop skills" class="program_stars">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+            <h2 class="portfolio_h2">Portfolio</h2>
+            <img src="./img/portfolio1.png" alt="Portfolio" class="porfolio_img">
+            <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Online fashion store - Homepage</a></p>
+            <img src="./img/portfolio2.png" alt="Portfolio" class="porfolio_img">
+            <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Reebok Store - Concept</a></p>
+            <img src="./img/portfolio3.png" alt="Portfolio" class="porfolio_img">
+            <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Braun Landing Page - Concept</a></p>
+        </div>
+    </section>
+    <footer class="footer" id="contacts">
+        <h2 class="footer_contacts">Contacts</h2>
+        <p class="footer_text">Want to know more or just chat?<br>You are welcome!</p>
+        <p class="footer_button_text"><button class="footer_button">Send message</button></p>
+        <div class="wrapper_footer">
+            <div class="links">
+                <a href="#!" class="link"><img src="./img/svg/link1.svg" alt=""></a>
+                <a href="#!" class="link"><img src="./img/svg/link2.svg" alt=""></a>
+                <a href="#!" class="link"><img src="./img/svg/link3.svg" alt=""></a>
+                <a href="#!" class="link"><img src="./img/svg/link4.svg" alt=""></a>
+            </div>
+        <p class="footer_text_final">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

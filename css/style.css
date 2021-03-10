@@ -386,10 +386,13 @@ textarea {
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 *, *::before, *::after {
     box-sizing: inherit
 }
+
 body {
     font-family: 'Arvo';
     font-style: normal;
@@ -428,6 +431,10 @@ body {
 
 .header_link:hover{
     color: black;
+}
+
+.header_photo {
+    max-width: 940px;
 }
 
 /* navigation menu end */
@@ -492,9 +499,148 @@ body {
 
 .last_paragraph {
     padding-bottom: 107px;
+    margin: 0px;
 }
 
 /* about me end */
+
+/* Skills */
+
+.skills_h2 {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 91px;
+}
+
+.skills_p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.programs_sills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.progam_img, .progam_p {
+    text-align: center;
+}
+
+.progam_img {
+    margin-bottom: 24px;
+}
+
+.progam_p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+/* Skills end */
+
+/* Portfolio */
+
+.portfolio {
+    background: #F6F6F6;
+}
+
+.portfolio_h2 {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 47px;
+}
+
+.porfolio_img {
+    margin-bottom: 44px;
+}
+
+.porfolio_name {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    padding-bottom: 99px;
+}
+
+.porfolio_name_link {
+    color: black;
+}
+
+/* Portfolio end */
+
+/* footer */
+
+.footer_contacts {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 114px;
+    padding-bottom: 20px;
+}
+
+.footer_text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+.footer_button_text {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.footer_button {
+    padding: 13px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    border: 3px solid black;
+    font-family: 'Arvo';
+    font-style: normal;
+    transition: .4s;
+}
+
+.footer_button:hover {
+    background: white;
+    color: black;
+}
+
+.footer_button:active {
+    color: white;
+    transition: .1s;
+}
+
+.wrapper_footer {
+    max-width: 342px;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.footer_text_final {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 123px;
+}
+
+/* footer end */
 
 
 
