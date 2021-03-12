@@ -418,25 +418,33 @@ body {
 
 .header_nav {
     border-bottom: 2px solid #828282;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: .5s;
 }
 
 .header_list {
     display: flex;
     justify-content: space-between;
+    color: #828282;
 }
 
-.header_item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+.header_nav_fixed {
+    border-bottom: 2px solid #828282;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: .4s;
 }
 
 .header_link {
     text-decoration: none;
-    color: #828282;
+    transition: .3s;
+    color: inherit;
 }
 
 .header_link:hover{
     color: black;
+    text-shadow: -1px -1px white;
 }
 
 .header_photo {
@@ -451,8 +459,9 @@ body {
 
 .header_link_fixed { 
     color:white;
-    transition: .4s;
+    transition: .2s;
 }
+
 /* ! ! ! */
 
 
