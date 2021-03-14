@@ -430,6 +430,10 @@ body {
     fill: gray;
 }
 
+.arrow:active {
+    fill: black;
+}
+
 .header_nav {
     border-bottom: 2px solid #828282;
     padding-top: 32px;
@@ -448,6 +452,10 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: .4s;
+}
+
+.header_item {
+    font-size: 20px;
 }
 
 .header_link {
@@ -618,6 +626,13 @@ body {
 
 .porfolio_name_link {
     color: black;
+    transition: .3s;
+    border-radius: 6px;
+}
+
+.porfolio_name_link:hover {
+    color: white;
+    background: black;
 }
 
 /* Portfolio end */
@@ -676,6 +691,24 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 45px;
+}
+
+.link {
+    height: 40px;
+    width: 40px;
+    transition: .3s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+}
+
+.link_link:hover {
+    fill: gray;
+}
+
+.link_link:active {
+    fill: black;
 }
 
 .footer_text_final {
