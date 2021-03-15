@@ -7,6 +7,23 @@
     <title>Denis Novik</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class="header">
@@ -48,7 +65,7 @@
             </nav>
         </div>
     </header>
-    <section class="first_section">
+    <section class="first_section" id="anima">
         <div class="wrapper">
             <div class="intro">
                 <div class="intro_den">
@@ -110,11 +127,11 @@
     <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2 class="portfolio_h2">Portfolio</h2>
-            <img src="./img/portfolio1.png" alt="Portfolio" class="porfolio_img">
+            <div class="porfolio_div"><img src="./img/portfolio1.png" alt="Portfolio" class="porfolio_img"></div>
             <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Online fashion store - Homepage</a></p>
-            <img src="./img/portfolio2.png" alt="Portfolio" class="porfolio_img">
+            <div class="porfolio_div"><img src="./img/portfolio2.png" alt="Portfolio" class="porfolio_img"></div>
             <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Reebok Store - Concept</a></p>
-            <img src="./img/portfolio3.png" alt="Portfolio" class="porfolio_img">
+            <div class="porfolio_div"><img src="./img/portfolio3.png" alt="Portfolio" class="porfolio_img"></div>
             <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Braun Landing Page - Concept</a></p>
         </div>
     </section>
@@ -133,5 +150,23 @@
         </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+          el: "#anima",   /* anima */ 
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          highlightColor: 0xffffff,
+          midtoneColor: 0x727272,
+          lowlightColor: 0xffffff,
+          baseColor: 0xffffff,
+          blurFactor: 0.43,
+          zoom: 1.20
+        })
+    </script>
 </body>
 </html>

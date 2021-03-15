@@ -17,4 +17,3 @@ window.onscroll = function showHeader () {
         $('.arrow').css('opacity','0');
     }
 }
-
