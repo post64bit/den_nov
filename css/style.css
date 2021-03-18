@@ -365,24 +365,24 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* arvo-regular - latin */
+/* comfortaa-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 400;
-  src: local(''),
-       url('../fonts/arvo-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/arvo-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* arvo-700 - latin */
-@font-face {
-  font-family: 'Arvo';
-  font-style: normal;
-  font-weight: 700;
-  src: local(''),
-       url('../fonts/arvo-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/arvo-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/comfortaa-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/comfortaa-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 html {
     box-sizing: border-box;
@@ -394,7 +394,7 @@ html {
 }
 
 body {
-    font-family: 'Arvo';
+    font-family: 'Comfortaa';
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
@@ -477,7 +477,6 @@ body {
     max-width: 940px;
 }
 
-/* ! ! ! */
 .header_fixed {
     background:black;
     transition: .4s;
@@ -487,9 +486,6 @@ body {
     color:white;
     transition: .2s;
 }
-
-/* ! ! ! */
-
 
 /* navigation menu end */
 
@@ -524,13 +520,21 @@ body {
     display: flex;
 }
 
-.intro_lang_choose {
+.lang_choose {
     text-decoration: none;
     color: #828282;
 }
 
 .header_photo {
     padding-bottom: 104px;
+}
+
+.lang_choose_ru, .lang_choose_en {
+    transition: .3s;
+}
+
+.lang_choose_ru:hover, .lang_choose_en:hover {
+    color: black;
 }
 
 /* intro end*/
@@ -686,7 +690,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     border: 3px solid black;
-    font-family: 'Arvo';
+    font-family: 'Comfortaa';
     font-style: normal;
     transition: .4s;
 }

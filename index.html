@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Novik</title>
+    <title class="title">Denis Novik</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon.ico/apple-icon-57x57.png">
@@ -47,19 +47,19 @@
             <nav class="header_nav">
                 <ul class="header_list">
                     <a href="#" class="header_link">   <!-- symbol &#12288 ! ! ! --> 
-                        <li class="header_item"><p>&#12288 Home &#12288</p></li>
+                        <li class="header_item"><p class="lng_header1">&#12288 Home &#12288</p></li>
                     </a>
                     <a href="#aboutme" class="header_link">
-                        <li class="header_item"><p>&#12288 About me &#12288</p></li>
+                        <li class="header_item"><p class="lng_header2">&#12288 About me &#12288</p></li>
                     </a>
                     <a href="#skills" class="header_link">
-                        <li class="header_item"><p>&#12288 Skills &#12288</p></li>
+                        <li class="header_item"><p class="lng_header3">&#12288 Skills &#12288</p></li>
                     </a>
                     <a href="#portfolio" class="header_link">
-                        <li class="header_item"><p>&#12288 Portfolio &#12288</p></li>
+                        <li class="header_item"><p class="lng_header4">&#12288 Portfolio &#12288</p></li>
                     </a>
                     <a href="#contacts" class="header_link">
-                        <li class="header_item"><p>&#12288 Contacts &#12288</p></li>
+                        <li class="header_item"><p class="lng_header5">&#12288 Contacts &#12288</p></li>
                     </a>
                 </ul>
             </nav>
@@ -69,13 +69,16 @@
         <div class="wrapper">
             <div class="intro">
                 <div class="intro_den">
-                    <h1 class="intro_den_p">Denis<br>Novik</h1>
+                    <h1 class="intro_den_p lng_denis_novik">Denis<br>Novik</h1>
                 </div>
                 <div class="intro_info">
-                    <p class="intro_info_p">UX | UI designer<br>24 years old, Minsk</p>
+                    <p class="intro_info_p lng_info">UX | UI designer<br>24 years old, Minsk</p>
                 </div>
                 <div class="intro_lang">
-                    <p class="intro_lang_p"><a href="#!" class="intro_lang_choose">RU</a> | <a href="#!" class="intro_lang_choose">ENG</a></p>
+                    <p class="intro_lang_p">
+                        <a href="#ru" class="lang_choose lang_choose_ru">RU</a> | 
+                        <a href="#en" class="lang_choose lang_choose_en">ENG</a>
+                    </p>
                 </div>
             </div>
             <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
@@ -83,22 +86,22 @@
     </section>
     <section class="about" id="aboutme">
         <div class="wrapper_about">
-            <h2 class="about_h2">About me</h2>
+            <h2 class="about_h2 lng_about_me">About me</h2>
             <p class="about_text">
-                <p class="about_paragraph">Hi, I'm Denis – UX/UI designer from Minsk.<br>
+                <p class="about_paragraph lng_text_1">Hi, I'm Denis – UX/UI designer from Minsk.<br>
                 I'm interested in design and everything connected with it.<br>
                 <br></p>
-                <p class="about_paragraph">I'm studying at courses "Web and mobile design<br>
+                <p class="about_paragraph lng_text_2">I'm studying at courses "Web and mobile design<br>
                 interfaces" in IT-Academy.<br>
                 <br></p>
-                <p class="about_paragraph last_paragraph">Ready to implement excellent projects<br>
+                <p class="about_paragraph last_paragraph lng_text_3">Ready to implement excellent projects<br>
                 with wonderful people.<br></p>
             </p>
         </div>
     </section>
     <section class="skills" id="skills">
-        <h2 class="skills_h2">Skills</h2>
-        <p class="skills_p">I work in such programs as</p>
+        <h2 class="skills_h2 lng_skills">Skills</h2>
+        <p class="skills_p lng_skills_text">I work in such programs as</p>
         <div class="wrapper">
             <div class="programs_sills">
                 <div class="programs_sills_item">
@@ -126,7 +129,7 @@
     </section>
     <section class="portfolio" id="portfolio">
         <div class="wrapper">
-            <h2 class="portfolio_h2">Portfolio</h2>
+            <h2 class="portfolio_h2 lng_portfolio">Portfolio</h2>
             <div class="porfolio_div"><img src="./img/portfolio1.png" alt="Portfolio" class="porfolio_img"></div>
             <p class="porfolio_name"><a href="#!" class="porfolio_name_link">Online fashion store - Homepage</a></p>
             <div class="porfolio_div"><img src="./img/portfolio2.png" alt="Portfolio" class="porfolio_img"></div>
@@ -136,9 +139,9 @@
         </div>
     </section>
     <footer class="footer" id="contacts">
-        <h2 class="footer_contacts">Contacts</h2>
-        <p class="footer_text">Want to know more or just chat?<br>You are welcome!</p>
-        <p class="footer_button_text"><button class="footer_button">Send message</button></p>
+        <h2 class="footer_contacts lng_contacts">Contacts</h2>
+        <p class="footer_text lng_contacts_text">Want to know more or just chat?<br>You are welcome!</p>
+        <p class="footer_button_text"><button class="footer_button lng_button">Send message</button></p>
         <div class="wrapper_footer">
             <div class="links">
                 <a href="https://www.facebook.com/" class="link_link" target="_blank"><svg class="link"><use xlink:href="sprite.svg#facebook"></use></svg></a>
@@ -146,9 +149,10 @@
                 <a href="https://www.linkedin.com/" class="link_link" target="_blank"><svg class="link"><use xlink:href="sprite.svg#linkedin"></use></svg></a>
                 <a href="https://www.pinterest.ru/" class="link_link" target="_blank"><svg class="link"><use xlink:href="sprite.svg#pinterest"></use></svg></a>
             </div>
-        <p class="footer_text_final">Like me on<br>Facebook, Instagram, Linkedin, Pinterest</p>
+        <p class="footer_text_final lng_like">Like me on<br>Facebook, Instagram, Linkedin, Pinterest</p>
         </div>
     </footer>
+    <script src="./js/translate.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/three.min.js"></script>
     <script src="./js/vanta.fog.min.js"></script>

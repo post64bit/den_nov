@@ -17,3 +17,37 @@ window.onscroll = function showHeader () {
         $('.arrow').css('opacity','0');
     }
 }
+
+window.onhashchange = function() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if(hash === 'en' || hash === 'ru') {
+        location.reload();
+    }
+}
+
+const allLang = ['ru', 'en'];
+
+function changeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substr(1);
+    if(!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    }
+    for (let key in lang_translate) {
+        let elem = document.querySelector('.' + key);
+        if(elem) {
+            document.querySelector('.' + key).innerHTML = lang_translate[key][hash];
+        }
+    }
+    if(hash === 'en') {
+        document.querySelector('.lang_choose_en').style.color='black';
+    } else {
+        document.querySelector('.lang_choose_ru').style.color='black';
+    }
+}
+
+changeLanguage();
+
+
