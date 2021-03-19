@@ -533,7 +533,7 @@ body {
     transition: .3s;
 }
 
-.lang_choose_ru:hover, .lang_choose_en:hover {
+.lang_choose_en:hover, .lang_choose_ru:hover {
     color: black;
 }
 
@@ -748,5 +748,173 @@ body {
 }
 
 /* footer end */
+
+/* checkbox */
+
+.checkbox {
+    --width: 40px;
+    --height: 20px;
+    --offset: 2px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 2px;
+}
+
+.checkbox:hover {
+    filter: brightness(1.5);
+}
+
+.checkbox_div {
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--width);
+    background-color: white;
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 0px 2px #828282;
+    -moz-box-shadow: 0px 0px 0px 2px #828282;
+    box-shadow: 0px 0px 0px 2px #828282;
+}
+
+.checkbox_input {
+    display: none;
+}
+
+.checkbox_input:checked ~ .checkbox_div {
+    background-color: black;
+}
+
+.checkbox_input:checked ~ .checkbox_div::before {
+    background-color: white;
+    left: calc(var(--width) - var(--height) + var(--offset));
+}
+
+.checkbox_div::before {
+    content: '';
+    position: absolute;
+    top: var(--offset);
+    left: var(--offset);
+    width: calc(var(--height) - 2 * var(--offset));
+    height: calc(var(--height) - 2 * var(--offset));
+    background-color: black;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.darkmode_moon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.darkmode_sun {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.darkmode {
+    display: flex;
+}
+
+/* checkbox end*/
+
+
+/* dark mode ! */
+
+body.dark {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+body.dark .header_nav {
+    border-bottom: 2px solid #bebebe;
+}
+
+body.dark .header_list {
+    color: #bebebe;
+}
+
+body.dark .header_nav_fixed {
+    border-bottom: 2px solid #bebebe;
+}
+
+body.dark .lang_choose {
+    color: #bebebe;
+}
+
+body.dark .lang_choose_ru:hover, body.dark .lang_choose_en:hover {
+    color: white;
+}
+
+body.dark .about {
+    background: black;
+}
+
+body.dark .progam_p {
+    color: #bebebe;
+}
+
+body.dark .portfolio {
+    background: black;
+}
+
+body.dark .porfolio_name_link {
+    color: white;
+}
+
+body.dark .porfolio_name_link:hover {
+    color: black;
+    background: white;
+}
+
+body.dark .footer_button {
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+}
+
+body.dark .footer_button:hover {
+    background: black;
+    color: white;
+}
+
+body.dark .footer_button:active {
+    color: black;
+}
+
+body.dark .link_link {
+    fill: white;
+}
+
+body.dark .link_link:hover {
+    fill: #bebebe;
+}
+
+body.dark .link_link:active {
+    fill: white;
+}
+
+body.dark .footer_text_final {
+    color: #bebebe;
+}
+
+body.dark .darkmode_sun, body.dark .darkmode_moon {
+    fill: white;
+}
+
+body.dark .arrow {
+    fill: white;
+}
+
+body.dark .arrow:hover {
+    fill: #bebebe;
+}
+
+body.dark .arrow:active {
+    fill: black;
+}
+
+/* dark mode end ! */
 
 
