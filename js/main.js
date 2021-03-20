@@ -38,7 +38,7 @@ function checkClick() {
     if(document.getElementById('checkbox').checked == true) {
         document.body.classList.add('dark');
         $('.darkmode_moon').css('fill','white');
-        $('.darkmode_sun').css('fill','white');
+        $('.darkmode_sun').css('fill','white'); 
         localStorage.theme = 'dark'
     } else {
         document.body.classList.remove('dark');
@@ -48,9 +48,19 @@ function checkClick() {
         }
         localStorage.theme = 'light'
     }
+    location.reload();
 }
 
 //darkmode end
+
+//stars dark mode !
+
+if(localStorage.theme == 'dark') {
+    $(".program_stars").attr("src", "./img/svg/stars4_dark.svg");
+    $(".program_stars3").attr("src", "./img/svg/stars3_dark.svg");
+}
+
+//stars dark mode end !
 
 //translate
 
@@ -84,5 +94,26 @@ function changeLanguage() {
 changeLanguage();
 
 //translate end
+
+//turn button anima
+
+if(localStorage.anima == 'anima-on') document.getElementById('checkbox2').checked = false
+if(localStorage.anima == 'anima-off') document.getElementById('checkbox2').checked = true
+
+function turnAnima() {
+    if(document.getElementById('checkbox2').checked == false) {
+        localStorage.anima = 'anima-on';
+    }
+    if(document.getElementById('checkbox2').checked == true) {
+        localStorage.anima = 'anima-off';
+    }
+    location.reload();
+}
+
+//turn button anima end
+
+
+
+
 
 

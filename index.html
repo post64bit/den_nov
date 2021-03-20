@@ -83,6 +83,28 @@
                 <div class="intro_info">
                     <p class="intro_info_p lng_info">UX | UI designer<br>24 years old, Minsk</p>
                 </div>
+                <div class="checkbox_elements">
+                    <label for='checkbox2'>
+                        <div class="smoke" for='checkbox2'>
+                            <svg class="darkmode_smoke">
+                                <use xlink:href="sprite.svg#smoke"></use>
+                            </svg>
+                        </div>
+                    </label>
+                    <div class="button_anima">
+                        <label class="checkbox">
+                            <input type="checkbox" onclick="turnAnima()" class="checkbox_input" id="checkbox2">
+                            <div class="checkbox_div"></div>
+                        </label>
+                    </div>
+                    <label for='checkbox2'>
+                        <div class="stop" for='checkbox2'>
+                            <svg class="darkmode_stop">
+                                <use xlink:href="sprite.svg#stop"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
                 <div class="intro_lang">
                     <p class="intro_lang_p">
                         <a href="#ru" class="lang_choose lang_choose_ru" onclick="localRu()">RU</a> | 
@@ -121,7 +143,7 @@
                 <div class="programs_sills_item">
                     <p class="progam_img"><img src="./img/svg/prog2.svg" alt="Illustrator"></p>
                     <p class="progam_p">Adobe<br>Illustrator</p>
-                    <img src="./img/svg/stars3.svg" alt="photoshop skills" class="program_stars">
+                    <img src="./img/svg/stars3.svg" alt="photoshop skills" class="program_stars program_stars3">
                 </div>
                 <div class="programs_sills_item">
                     <p class="progam_img"><img src="./img/svg/prog3.svg" alt="After Effects"></p>
@@ -171,23 +193,8 @@
     </footer>
     <script src="./js/translate.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/three.min.js"></script>
-    <script src="./js/vanta.fog.min.js"></script>
-    <script>
-        VANTA.FOG({
-          el: "#",   /* anima */ 
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          highlightColor: 0xffffff,
-          midtoneColor: 0x727272,
-          lowlightColor: 0xffffff,
-          baseColor: 0xffffff,
-          blurFactor: 0.43,
-          zoom: 1.20
-        })
-    </script>
+    <script src="./js/three.min.js" id="three"></script>
+    <script src="./js/vanta.fog.min.js" id="vanta"></script>
+    <script src="./js/anima.js" id="anima"></script>
 </body>
 </html>

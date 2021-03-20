@@ -504,7 +504,6 @@ body {
 .intro_info {
     display: flex;
     align-items: flex-end;
-    margin-right: 100px;
 }
 
 .intro_den_p {
@@ -514,6 +513,13 @@ body {
 .intro_lang_p {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+}
+
+.button_anima {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 
 .intro_lang {
@@ -535,6 +541,17 @@ body {
 
 .lang_choose_en:hover, .lang_choose_ru:hover {
     color: black;
+}
+
+.checkbox_elements {
+    display: flex;
+    align-items: flex-end;
+}
+
+.darkmode_smoke, .darkmode_stop {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 /* intro end*/
@@ -820,7 +837,7 @@ body {
 /* checkbox end*/
 
 
-/* dark mode ! */
+/* dark mode ! ! ! ! ! ! ! ! ! ! ! !*/
 
 body.dark {
     background-color: rgb(54, 54, 54);
@@ -829,6 +846,11 @@ body.dark {
 
 body.dark .header_nav {
     border-bottom: 2px solid #bebebe;
+}
+
+body.dark .header_link:hover {
+    color: white;
+    text-shadow: none;
 }
 
 body.dark .header_list {
@@ -903,6 +925,10 @@ body.dark .darkmode_sun, body.dark .darkmode_moon {
     fill: white;
 }
 
+body.dark .darkmode_smoke, body.dark .darkmode_stop {
+    fill: white;
+}
+
 body.dark .arrow {
     fill: white;
 }
@@ -915,6 +941,6 @@ body.dark .arrow:active {
     fill: black;
 }
 
-/* dark mode end ! */
+/* dark mode end ! ! ! ! ! ! ! */
 
 
