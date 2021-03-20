@@ -62,15 +62,12 @@ window.onhashchange = function() {
     }
 }
 
-const allLang = ['ru', 'en'];
+if(!localStorage.lang) localStorage.lang = 'en'
+function localRu() {localStorage.lang = 'ru'};
+function localEn() {localStorage.lang = 'en'};
 
 function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substr(1);
-    if(!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-        location.reload();
-    }
+    hash = localStorage.lang
     for (let key in lang_translate) {
         let elem = document.querySelector('.' + key);
         if(elem) {
