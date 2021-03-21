@@ -83,28 +83,31 @@
                 <div class="intro_info">
                     <p class="intro_info_p lng_info">UX | UI designer<br>24 years old, Minsk</p>
                 </div>
-                <div class="checkbox_elements">
-                    <label for='checkbox2'>
-                        <div class="smoke" for='checkbox2'>
-                            <svg class="darkmode_smoke">
-                                <use xlink:href="sprite.svg#smoke"></use>
-                            </svg>
+                    <div class="magic_and_checkbox_elements">
+                        <div class="magic">magic 💨</div>
+                        <div class="checkbox_elements">
+                            <label for='checkbox2'>
+                                <div class="smoke" for='checkbox2'>
+                                    <svg class="darkmode_smoke">
+                                        <use xlink:href="sprite.svg#smoke"></use>
+                                    </svg>
+                                </div>
+                            </label>
+                            <div class="button_anima">
+                                <label class="checkbox">
+                                    <input type="checkbox" onclick="turnAnima()" class="checkbox_input" id="checkbox2">
+                                    <div class="checkbox_div"></div>
+                                </label>
+                            </div>
+                            <label for='checkbox2'>
+                                <div class="stop" for='checkbox2'>
+                                    <svg class="darkmode_stop" >
+                                        <use xlink:href="sprite.svg#stop"></use>
+                                    </svg>
+                                </div>
+                            </label>
                         </div>
-                    </label>
-                    <div class="button_anima">
-                        <label class="checkbox">
-                            <input type="checkbox" onclick="turnAnima()" class="checkbox_input" id="checkbox2">
-                            <div class="checkbox_div"></div>
-                        </label>
                     </div>
-                    <label for='checkbox2'>
-                        <div class="stop" for='checkbox2'>
-                            <svg class="darkmode_stop">
-                                <use xlink:href="sprite.svg#stop"></use>
-                            </svg>
-                        </div>
-                    </label>
-                </div>
                 <div class="intro_lang">
                     <p class="intro_lang_p">
                         <a href="#ru" class="lang_choose lang_choose_ru" onclick="localRu()">RU</a> | 
@@ -112,7 +115,22 @@
                     </p>
                 </div>
             </div>
-            <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
+            <a href="#popup_img_id">
+                <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
+            </a>
+            <div class="popup_img" id="popup_img_id">
+                <a href="##" class="popup_area_img" id="esc"></a>
+                <div class="popup_body_img">
+                    <div class="popup_content_img">
+                        <a href="##" class="popup_close_img">
+                            <svg class="cancel_top"><use xlink:href="sprite.svg#cancel"></use></svg>
+                        </a>
+                        <div class="popup_img_native">
+                            <img src="./img/den_for_popup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="about" id="aboutme">
@@ -172,7 +190,7 @@
     <footer class="footer" id="contacts">
         <h2 class="footer_contacts lng_contacts">Contacts</h2>
         <p class="footer_text lng_contacts_text">Want to know more or just chat?<br>You are welcome!</p>
-        <p class="footer_button_text"><button class="footer_button lng_button">Send message</button></p>
+        <p class="footer_button_text"><a href="#popup" id="button"><button class="footer_button lng_button">Send message</button></a></p>
         <div class="wrapper_footer">
             <div class="links">
                 <a href="https://www.facebook.com/" class="link_link" target="_blank">
@@ -196,5 +214,22 @@
     <script src="./js/three.min.js" id="three"></script>
     <script src="./js/vanta.fog.min.js" id="vanta"></script>
     <script src="./js/anima.js" id="anima"></script>
+    <div class="popup" id="popup">
+        <a href="##" class="popup_area" id="esc"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="##" class="popup_close">
+                    <svg class="cancel_futter"><use xlink:href="sprite.svg#cancel_futter"></use></svg>
+                </a>
+                <div class="popup_title">This is modal window num 1</div>
+                <div class="popup_text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
