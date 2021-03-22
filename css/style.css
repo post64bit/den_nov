@@ -975,12 +975,13 @@ body {
     background-color: white;
     color: black;
     max-width: 800px;
-    padding: 30px;
+    padding: 20px;
     position: relative;
     opacity: 0;
     border-radius: 20px;
     transition: all 0.5s ease 0s;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    background-color: rgb(41, 41, 41);
 }
 
 .popup:target .popup_content {
@@ -999,14 +1000,13 @@ body {
     right: 10px;
     top: 10px;
     font-size: 20px;
-    color: black;
     text-decoration: none;
 }
 
 .cancel_futter {
-    fill: black;
-    width: 30px;
-    height: 30px;
+    fill: white;
+    width: 25px;
+    height: 25px;
     margin-top: 10px;
     margin-right: 10px;
     transition: .2s;
@@ -1021,6 +1021,227 @@ body {
 }
 
 /* popup futter end */
+
+/* form */
+
+.form {
+    min-width: 500px;
+    margin: 0px auto;
+    color: white;
+}
+
+.form_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form_item {
+    margin-bottom: 10px;
+}
+
+.form_lable {
+    font-size: 15px;
+    display: block;
+}
+
+.form_input {
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_input:focus {
+    box-shadow: 0 0 7px white;
+}
+
+textarea.form_input {
+    min-height: 60px;
+    resize: vertical;
+    max-height: 100px;
+    padding: 6px;
+}
+
+.form_label_add_photo {
+    margin-bottom: 5px;
+}
+
+.file {
+    display: flex;
+
+}
+
+.options {
+    display: flex;
+    margin-top: 5px;
+}
+
+.option_item{
+    margin-bottom: 30px;
+}
+
+.options_input {
+    display: none;
+}
+
+.options_input:checked + .options_label::after {
+    transform: scale(1);
+}
+
+.options_label {
+    display: inline-flex;
+    font-size: 14px;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+}
+
+.options_label span{
+    width: 150px;
+}
+
+.options_label::before {
+    content: '';
+    align-self: flex-start;
+    flex: 0 0 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.options_label::after {
+    transition: .3s;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.select {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 6px;
+}
+
+.file_item {
+    position: relative;
+}
+
+.file_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.file_button {
+    display: inline-flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 25px;
+}
+
+.file_preview {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-left: 20px;
+}
+
+.file_preview img {
+    max-width: 100%;
+}
+
+.checkbox_input_form {
+    display: none;
+}
+
+.checkbox_label {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.checkbox_label::before {
+    content: "";
+    align-self: flex-start;
+    margin-right: 10px;
+    flex: 0 0 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.checkbox_label::after {
+    transition: .3s;
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transform: scale(0);
+}
+
+.checkbox_input_form:checked + .checkbox_label::after {
+    transform: scale(1);
+}
+
+.checkbox_label a {
+    color: white;
+}
+
+.form_button {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 5px 0 black;
+    border: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: .3s;
+    position: relative;
+    top: 0;
+}
+
+.form_button:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.form_button:active {
+    top: 3px;
+    box-shadow: 0 2px 0 black;
+}
+
+
+
+/* form end */
 
 /* popup image */
 

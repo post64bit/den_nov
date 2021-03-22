@@ -209,11 +209,6 @@
         <p class="footer_text_final lng_like">Like me on<br>Facebook, Instagram, Linkedin, Pinterest</p>
         </div>
     </footer>
-    <script src="./js/translate.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/three.min.js" id="three"></script>
-    <script src="./js/vanta.fog.min.js" id="vanta"></script>
-    <script src="./js/anima.js" id="anima"></script>
     <div class="popup" id="popup">
         <a href="##" class="popup_area" id="esc"></a>
         <div class="popup_body">
@@ -221,15 +216,70 @@
                 <a href="##" class="popup_close">
                     <svg class="cancel_futter"><use xlink:href="sprite.svg#cancel_futter"></use></svg>
                 </a>
-                <div class="popup_title">This is modal window num 1</div>
-                <div class="popup_text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                <div class="form">
+                    <form action="#" id="form" class="form_body">
+                        <h1 class="form_title lng_form_title">Отправка данных на почту</h1>
+                        <div class="form_item">
+                            <label for="formName" class="form_label lng_form_label">Имя*:</label>
+                            <input id="formNmae" type="text" name="name" class="form_input">
+                        </div>
+                        <div class="form_item">
+                            <label for="formEmail" class="form_label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="Email" class="form_input">
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label lng_form_label1">Левша или правша?</div>
+                            <div class="options">
+                                <div class="options_item">
+                                    <input id="formRightHanden" type="radio" checked value="right" name="hand" class="options_input">
+                                    <label for="formRightHanden" class="options_label"><span class="lng_options_label1">Правша</span></label>
+                                </div>
+                                <div class="options_item">
+                                    <input id="formleftHanden" type="radio" value="left" name="hand" class="options_input">
+                                    <label for="formleftHanden" class="options_label"><span class="lng_options_label2">Левша</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="forMassage" class="form_label lng_form_label2">Сообщение:</label>
+                            <textarea name="massage" id="forMassage" class="form_input"></textarea>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label lng_form_label3">Возраст</div>
+                            <select name="age" class="select">
+                                <option class="lng_form_label3_1" value="от 18 до 25" selected>Молодой</option>
+                                <option class="lng_form_label3_2" value="от 25 до 45">Старый</option>
+                                <option class="lng_form_label3_3" value="от 45">Супер стар</option>
+                            </select>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_label form_label_add_photo lng_form_label4">Прикрепить фото</div>
+                            <div class="file">
+                                <div class="file_item">
+                                    <input id="form_image" accept=".png, .jpg, .gif" type="file" name="image" class="file_input">
+                                    <div class="file_button lng_file_button">Выбрать</div>
+                                </div>
+                                <div class="file_preview"></div>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input_form">
+                                <label for="formAgreement" class="checkbox_label">
+                                    <span class="lng_checkbox_label">Я согласен(на) с <a href="">условиями</a>*</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form_button lng_form_button">Отправить</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/translate.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/three.min.js" id="three"></script>
+    <script src="./js/vanta.fog.min.js" id="vanta"></script>
+    <script src="./js/anima.js" id="anima"></script>
 </body>
 </html>

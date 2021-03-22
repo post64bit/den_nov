@@ -75,4 +75,60 @@ const lang_translate = {
         'ru' : 'Подписываейтесь на мои социальные сети<br>Facebook, Instagram, Linkedin, Pinterest',
         'en' : 'Like me on<br>Facebook, Instagram, Linkedin, Pinterest',
     },
+    'lng_form_title' : {
+        'ru' : 'Отправка данных на почту',
+        'en' : 'Sending data to mail',
+    },
+    'lng_form_label' : {
+        'ru' : 'Имя*:',
+        'en' : 'Name*:', 
+    },
+    'lng_form_label1' : {
+        'ru' : 'Левша или правша?',
+        'en' : 'Left-handed or right-handed?', 
+    },
+    'lng_options_label1' : {
+        'ru' : 'Правша?',
+        'en' : 'Right-handed?', 
+    },
+    'lng_options_label2' : {
+        'ru' : 'Левша',
+        'en' : 'Left-handed', 
+    },
+    'lng_form_label2' : {
+        'ru' : 'Сообщение',
+        'en' : 'Message', 
+    },
+    'lng_form_label3' : {
+        'ru' : 'Возраст',
+        'en' : 'Age',
+    },
+    'lng_form_label3_1' : {
+        'ru' : 'Молодой',
+        'en' : 'Young', 
+    },
+    'lng_form_label3_2' : {
+        'ru' : 'Старый',
+        'en' : 'Old', 
+    },
+    'lng_form_label3_3' : {
+        'ru' : 'Супер стар',
+        'en' : 'Super star', 
+    },
+    'lng_form_label4' : {
+        'ru' : 'Прикрепить фото',
+        'en' : 'Add photo', 
+    },
+    'lng_file_button' : {
+        'ru' : 'Выбрать',
+        'en' : 'Choose', 
+    },
+    'lng_checkbox_label' : {
+        'ru' : 'Я согласен(на) с <a href="">условиями</a>*',
+        'en' : 'I agree with the <a href="">conditions</a>*', 
+    },
+    'lng_form_button' : {
+        'ru' : 'Отправить',
+        'en' : 'Send', 
+    },
 }
