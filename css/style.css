@@ -488,6 +488,11 @@ body {
     color: black;
 }
 
+*::selection {
+    color: yellow; /* Цвет текста */
+    background: black; /* Цвет фона */
+}
+
 /* navigation menu */
 
 .header {
@@ -981,7 +986,8 @@ body {
     border-radius: 20px;
     transition: all 0.5s ease 0s;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(37, 37, 37);
+    border: 2px solid white;
 }
 
 .popup:target .popup_content {
@@ -1009,15 +1015,15 @@ body {
     height: 25px;
     margin-top: 10px;
     margin-right: 10px;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .cancel_futter:hover {
-    fill:gray;
+    fill: gray;
 }
 
 .cancel_futter:active {
-    fill:black;
+    fill: black;
 }
 
 /* popup futter end */
@@ -1057,6 +1063,14 @@ body {
     box-shadow: 0 0 7px white;
 }
 
+.form_input._error {
+    box-shadow: 0 0 15px red;
+}
+
+.checkbox._error .checkbox_label::before {
+    box-shadow: 0 0 15px red;
+}
+
 textarea.form_input {
     min-height: 60px;
     resize: vertical;
@@ -1070,7 +1084,6 @@ textarea.form_input {
 
 .file {
     display: flex;
-
 }
 
 .options {
@@ -1078,7 +1091,7 @@ textarea.form_input {
     margin-top: 5px;
 }
 
-.option_item{
+.option_item {
     margin-bottom: 30px;
 }
 
@@ -1098,12 +1111,12 @@ textarea.form_input {
     margin-right: 50px;
 }
 
-.options_label span{
+.options_label span {
     width: 150px;
 }
 
 .options_label::before {
-    content: '';
+    content: "";
     align-self: flex-start;
     flex: 0 0 20px;
     height: 20px;
@@ -1112,8 +1125,8 @@ textarea.form_input {
     margin-right: 10px;
 }
 .options_label::after {
-    transition: .3s;
-    content: '';
+    transition: 0.3s;
+    content: "";
     position: absolute;
     top: 4px;
     left: 4px;
@@ -1140,27 +1153,34 @@ textarea.form_input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100%;
+    width: 137px;
+    height: 90%;
     opacity: 0;
     font-size: 0;
     cursor: pointer;
+    border-radius: 30px;
+}
+
+.file_input:hover + .file_button {
+    background-color: rgb(34, 34, 34);
+    border: 2px solid rgb(141, 140, 140);
 }
 
 .file_button {
-    display: inline-flex;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
     background-color: black;
     padding: 10px 25px;
+    border: 2px solid white;
+    transition: 0.2s;
 }
 
 .file_preview {
     height: 50px;
     width: 50px;
-    background-color: black;
     margin-left: 20px;
+    border: 2px dashed white;
 }
 
 .file_preview img {
@@ -1190,8 +1210,8 @@ textarea.form_input {
 }
 
 .checkbox_label::after {
-    transition: .3s;
-    content: '';
+    transition: 0.3s;
+    content: "";
     width: 14px;
     height: 14px;
     position: absolute;
@@ -1225,7 +1245,7 @@ textarea.form_input {
     border: white;
     text-transform: uppercase;
     letter-spacing: 3px;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
     top: 0;
 }
@@ -1238,8 +1258,6 @@ textarea.form_input {
     top: 3px;
     box-shadow: 0 2px 0 black;
 }
-
-
 
 /* form end */
 
@@ -1414,6 +1432,5 @@ body.dark .arrow:hover {
 body.dark .arrow:active {
     fill: black;
 }
-
 
 /* dark mode end ! ! ! ! ! ! ! */

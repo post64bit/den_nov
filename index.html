@@ -221,11 +221,11 @@
                         <h1 class="form_title lng_form_title">Отправка данных на почту</h1>
                         <div class="form_item">
                             <label for="formName" class="form_label lng_form_label">Имя*:</label>
-                            <input id="formNmae" type="text" name="name" class="form_input">
+                            <input id="formNmae" type="text" name="name" class="form_input _req">
                         </div>
                         <div class="form_item">
                             <label for="formEmail" class="form_label">E-mail*:</label>
-                            <input id="formEmail" type="text" name="Email" class="form_input">
+                            <input id="formEmail" type="text" name="Email" class="form_input _req _email">
                         </div>
                         <div class="form_item">
                             <div class="form_label lng_form_label1">Левша или правша?</div>
@@ -256,22 +256,22 @@
                             <div class="form_label form_label_add_photo lng_form_label4">Прикрепить фото</div>
                             <div class="file">
                                 <div class="file_item">
-                                    <input id="form_image" accept=".png, .jpg, .gif" type="file" name="image" class="file_input">
+                                    <input id="form_image" class="file_input" accept=".png, .jpg, .gif" type="file" name="image">
                                     <div class="file_button lng_file_button">Выбрать</div>
                                 </div>
-                                <div class="file_preview"></div>
+                                <div id="formPreview" class="file_preview"><img src="./img/just_photo.png" alt="Фото"></div>
                             </div>
                         </div>
                         <div class="form_item">
                             <div class="checkbox">
-                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input_form">
+                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input_form _req">
                                 <label for="formAgreement" class="checkbox_label">
                                     <span class="lng_checkbox_label">Я согласен(на) с <a href="">условиями</a>*</span>
                                 </label>
                             </div>
                         </div>
                         <button type="submit" class="form_button lng_form_button">Отправить</button>
-                    </form>
+                    </form> 
                 </div>
             </div>
         </div>
