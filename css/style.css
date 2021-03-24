@@ -505,6 +505,7 @@ body {
 .wrapper {
     max-width: 940px;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 
 .arrow {
@@ -566,7 +567,7 @@ body {
 }
 
 .header_photo {
-    max-width: 940px;
+    max-width: 100%;
 }
 
 .header_fixed {
@@ -616,6 +617,7 @@ body {
 
 .intro_lang {
     display: flex;
+    align-self: flex-end;
 }
 
 .lang_choose {
@@ -748,6 +750,7 @@ body {
 .porfolio_img {
     transition: 0.8s;
     display: block;
+    max-width: 100%;
 }
 
 .porfolio_img:hover {
@@ -1325,6 +1328,209 @@ textarea.form_input {
 }
 
 /* popup image end */
+
+/* mobile */
+
+.mobile_header_link {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.mobile_header_item {
+    margin-top: 30px;
+}
+
+.mobile_header_list {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.mobile {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    top: -100%;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.mobile.active {
+    top: 0;
+}
+
+.header_burger.active span {
+    transform: scale(0);
+}
+
+.header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.darkmode_mobile {
+    margin-top: 50px;
+}
+
+.intro_lang {
+    background-color: white;
+}
+
+/* mobile end */
+
+
+/* media */
+
+@media (min-width: 980px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        max-width: 740px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .programs_sills {
+        flex-direction: column;
+    }
+    .programs_sills:last-child {
+        margin-bottom: 0px;
+    }
+    .programs_sills_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .wrapper {
+        max-width: 700px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .wrapper {
+        max-width: 680px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+/* FIXME: */
+@media (max-width: 690px) {
+    .mobile {
+        display: block;
+    }
+    .header {
+        display: none;
+    }
+    .header_photo_p {
+        text-align: center;
+    }
+    .header_burger {
+        display: block;
+        position: fixed;
+        top: 1px;
+        left: 1px;
+        width: 30px;
+        height: 20px;
+        margin-left: 80%;
+        margin-top: 35px;
+        z-index: 10;
+    }
+    .header_burger span {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: .4s;
+    }
+    .header_burger::before,
+    .header_burger::after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: .4s;
+    }
+    .header_burger::before {
+        top: 0;
+    }
+    .header_burger::after {
+        bottom: 0;
+    }
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_mobile_and_magic_and_checkbox_elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #intro_lang_default {
+        display: none;
+    }
+    .darkmode_and_intro_lang {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-bottom: 20px;
+        margin-right: 28px;
+    }
+    .intro_den {
+        margin-bottom: 20px;
+    }
+    .magic {
+        margin-top: 20px;
+    }
+    footer {
+        padding: 15px;
+    }
+    body.light .mobile_header_link{
+        background-color: white;
+        color: black;
+    }
+    body.light .header_burger span {
+        background-color: black;
+    }
+    body.light .header_burger::before {
+        background-color: black;
+    }
+    body.light .header_burger::after {
+        background-color: black;
+    }
+    body.light  .darkmode_sun{
+        fill: black;
+    }
+}
+
+/* media  end */
 
 /* dark mode ! ! ! ! ! ! ! ! ! ! ! !*/
 

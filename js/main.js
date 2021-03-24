@@ -32,16 +32,39 @@ window.onscroll = function showHeader() {
 
 if (!localStorage.theme) localStorage.theme = "light";
 document.body.className = localStorage.theme;
-if (localStorage.theme == "dark")
+if (localStorage.theme == "dark") {
     document.getElementById("checkbox").checked = true;
+    document.getElementById("checkbox22").checked = true;
+}
 
 function checkClick() {
     if (document.getElementById("checkbox").checked == true) {
+        document.getElementById("checkbox22").checked = true
         document.body.classList.add("dark");
         $(".darkmode_moon").css("fill", "white");
         $(".darkmode_sun").css("fill", "white");
         localStorage.theme = "dark";
     } else {
+        document.getElementById("checkbox22").checked = false
+        document.body.classList.remove("dark");
+        if ($(document).scrollTop() < parseInt($("nav").css("height")) - 30) {
+            $(".darkmode_moon").css("fill", "black");
+            $(".darkmode_sun").css("fill", "black");
+        }
+        localStorage.theme = "light";
+    }
+    location.reload();
+}
+
+function checkClick22() {
+    if (document.getElementById("checkbox22").checked == true) {
+        document.getElementById("checkbox").checked = true
+        document.body.classList.add("dark");
+        $(".darkmode_moon").css("fill", "white");
+        $(".darkmode_sun").css("fill", "white");
+        localStorage.theme = "dark";
+    } else {
+        document.getElementById("checkbox").checked = false
         document.body.classList.remove("dark");
         if ($(document).scrollTop() < parseInt($("nav").css("height")) - 30) {
             $(".darkmode_moon").css("fill", "black");
@@ -53,6 +76,20 @@ function checkClick() {
 }
 
 //darkmode end
+
+// header borger
+
+$(document).ready(function() {
+    $('.header_burger').click(function(event) {
+        $('.header_burger, .mobile').toggleClass('active');
+    });
+});
+
+function closeMenu() {
+    $('.header_burger, .mobile').toggleClass('active');
+};
+
+// header borger end 
 
 //stars dark mode !
 
@@ -218,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function uploadFile(file) {
-        if (!["image/jpeg", "image/png", "image/gif"].includes(file.tupe)) {
+        if (!["image/jpeg", "image/png", "image/gif"].includes(file.type)) {
             alert("Разрены только изображения!");
             formImage.value = "";
             return;

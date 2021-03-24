@@ -131,4 +131,24 @@ const lang_translate = {
         'ru' : 'Отправить',
         'en' : 'Send', 
     },
+    'lng_header12' : {
+        'ru' : 'Главная',
+        'en' : 'Home',
+    },
+    'lng_header22' : {
+        'ru' : 'Обо мне',
+        'en' : 'About me',
+    },
+    'lng_header32' : {
+        'ru' : 'Навыки',
+        'en' : 'Skills',
+    },
+    'lng_header42' : {
+        'ru' : 'Портфолио',
+        'en' : 'Portfolio',
+    },
+    'lng_header52' : {
+        'ru' : 'Контакты',
+        'en' : 'Contacts',
+    }
 }

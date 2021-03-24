@@ -24,6 +24,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0">
 </head>
 <body>
     <header class="header">
@@ -74,6 +75,60 @@
             </nav>
         </div>
     </header>
+    <div class="header_burger">
+        <span></span>
+    </div>
+    <div class="mobile">
+        <div class="nav_mobile_and_magic_and_checkbox_elements">
+            <div class="nav_mobile">
+                <ul class="mobile_header_list">
+                    <a href="#" class="mobile_header_link" onclick="closeMenu()">
+                        <li class="mobile_header_item"><p class="lng_header12" style="color:white">Home</p></li>
+                    </a>
+                    <a href="#aboutme" class="mobile_header_link" onclick="closeMenu()">
+                        <li class="mobile_header_item"><p class="lng_header22" style="color:white">About me</p></li>
+                    </a>
+                    <a href="#skills" class="mobile_header_link" onclick="closeMenu()">
+                        <li class="mobile_header_item"><p class="lng_header32" style="color:white">Skills</p></li>
+                    </a>
+                    <a href="#portfolio" class="mobile_header_link" onclick="closeMenu()">
+                        <li class="mobile_header_item"><p class="lng_header42" style="color:white">Portfolio</p></li>
+                    </a>
+                    <a href="#contacts" class="mobile_header_link" onclick="closeMenu()">
+                        <li class="mobile_header_item"><p class="lng_header52" style="color:white">Contacts</p></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="darkmode_and_intro_lang">
+                <div class="darkmode darkmode_mobile" id="darkmodeid">
+                    <label for='checkbox'>
+                        <div class="sun" for='checkbox'>
+                            <svg class="darkmode_sun" style="fill:white">
+                                <use xlink:href="sprite.svg#sun"></use>
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" onclick="checkClick22()" class="checkbox_input" id="checkbox22">
+                        <div class="checkbox_div"></div>
+                    </label>
+                    <label for='checkbox'>
+                        <div class="moon">
+                            <svg class="darkmode_moon" style="fill:white">
+                                <use xlink:href="sprite.svg#moon"></use>
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+                <div class="intro_lang" id="intro_lang_mobile">
+                    <p class="intro_lang_p">
+                        <a href="#ru" class="lang_choose lang_choose_ru" onclick="localRu()">RU</a> | 
+                        <a href="#en" class="lang_choose lang_choose_en" onclick="localEn()">ENG</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="first_section" id="anima">
         <div class="wrapper">
             <div class="intro">
@@ -108,7 +163,7 @@
                             </label>
                         </div>
                     </div>
-                <div class="intro_lang">
+                <div class="intro_lang" id="intro_lang_default">
                     <p class="intro_lang_p">
                         <a href="#ru" class="lang_choose lang_choose_ru" onclick="localRu()">RU</a> | 
                         <a href="#en" class="lang_choose lang_choose_en" onclick="localEn()">ENG</a>
@@ -116,7 +171,13 @@
                 </div>
             </div>
             <a href="#popup_img_id">
-                <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
+                <p class="header_photo_p">
+                    <picture>
+                        <source srcset="./img/den.png" type="image/jpeg" media="(min-width: 690px)">
+                        <source srcset="./img/den_for_popup.png" type="image/jpeg" media="(max-width: 690px)">
+                        <img src="./img/den.png" class="header_photo" alt="альтернативный текст">
+                    </picture>
+                </p>
             </a>
             <div class="popup_img" id="popup_img_id">
                 <a href="##" class="popup_area_img" id="esc"></a>
