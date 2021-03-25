@@ -293,3 +293,10 @@ $(".header").on("click", "a", function(event) {
     scrollingDistance = $(anchorId).offset().top - $(".header").height();
     $("html, body").animate({scrollTop: scrollingDistance}, 500);
 });
+
+$(".mobile").on("click", "a", function(event) {
+    event.preventDefault();
+    var anchorId  = $(this).attr("href");
+    scrollingDistance = $(anchorId).offset().top;
+    $("html, body").animate({scrollTop: scrollingDistance}, 500);
+});
