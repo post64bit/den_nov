@@ -75,7 +75,7 @@
             </nav>
         </div>
     </header>
-    <div class="header_burger">
+    <div class="header_burger" id="burgerid">
         <span></span>
     </div>
     <div class="mobile">
@@ -139,7 +139,7 @@
                     <p class="intro_info_p lng_info">UX | UI designer<br>24 years old, Minsk</p>
                 </div>
                     <div class="magic_and_checkbox_elements">
-                        <div class="magic">magic 💨</div>
+                        <div class="magic">magic</div>
                         <div class="checkbox_elements">
                             <label for='checkbox2'>
                                 <div class="smoke" for='checkbox2'>
@@ -197,7 +197,7 @@
     <section class="about" id="aboutme">
         <div class="wrapper_about">
             <h2 class="about_h2 lng_about_me">About me</h2>
-            <p class="about_text">
+            <div class="about_text">
                 <p class="about_paragraph lng_text_1">Hi, I'm Denis – UX/UI designer from Minsk.<br>
                 I'm interested in design and everything connected with it.<br>
                 <br></p>
@@ -206,7 +206,7 @@
                 <br></p>
                 <p class="about_paragraph last_paragraph lng_text_3">Ready to implement excellent projects<br>
                 with wonderful people.<br></p>
-            </p>
+            </div>
         </div>
     </section>
     <section class="skills" id="skills">
@@ -251,7 +251,7 @@
     <footer class="footer" id="contacts">
         <h2 class="footer_contacts lng_contacts">Contacts</h2>
         <p class="footer_text lng_contacts_text">Want to know more or just chat?<br>You are welcome!</p>
-        <p class="footer_button_text"><a href="#popup" id="button"><button class="footer_button lng_button">Send message</button></a></p>
+        <p class="footer_button_text"><a href="#popup" id="button"><button class="footer_button lng_button" onclick="hideBurger()">Send message</button></a></p>
         <div class="wrapper_footer">
             <div class="links">
                 <a href="https://www.facebook.com/" class="link_link" target="_blank">
@@ -274,12 +274,12 @@
         <a href="##" class="popup_area" id="esc"></a>
         <div class="popup_body">
             <div class="popup_content">
-                <a href="##" class="popup_close">
+                <a href="##" class="popup_close" id="popupid" onclick="noHideBurger()">
                     <svg class="cancel_futter"><use xlink:href="sprite.svg#cancel_futter"></use></svg>
                 </a>
                 <div class="form">
                     <form action="#" id="form" class="form_body">
-                        <h1 class="form_title lng_form_title">Отправка данных на почту</h1>
+                        <h1 class="form_title lng_form_title">Отправка на почту</h1>
                         <div class="form_item">
                             <label for="formName" class="form_label lng_form_label">Имя*:</label>
                             <input id="formNmae" type="text" name="name" class="form_input _req">
@@ -320,7 +320,7 @@
                                     <input id="form_image" class="file_input" accept=".png, .jpg, .gif" type="file" name="image">
                                     <div class="file_button lng_file_button">Выбрать</div>
                                 </div>
-                                <div id="formPreview" class="file_preview"><img src="./img/just_photo.png" alt="Фото"></div>
+                                <div id="formPreview" class="file_preview"></div>
                             </div>
                         </div>
                         <div class="form_item">

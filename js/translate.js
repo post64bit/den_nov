@@ -76,8 +76,8 @@ const lang_translate = {
         'en' : 'Like me on<br>Facebook, Instagram, Linkedin, Pinterest',
     },
     'lng_form_title' : {
-        'ru' : 'Отправка данных на почту',
-        'en' : 'Sending data to mail',
+        'ru' : 'Отправка на почту',
+        'en' : 'Sending to mail',
     },
     'lng_form_label' : {
         'ru' : 'Имя*:',

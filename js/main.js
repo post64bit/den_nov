@@ -277,3 +277,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // form end
+
+
+function hideBurger() {
+    if(window.screen.width < 600) {
+        document.getElementById('burgerid').style.cssText = "display: none";
+    };
+};
+function noHideBurger() {document.getElementById('burgerid').style.cssText = "display: block"};
