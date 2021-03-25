@@ -285,3 +285,11 @@ function hideBurger() {
     };
 };
 function noHideBurger() {document.getElementById('burgerid').style.cssText = "display: block"};
+
+
+$(".header").on("click", "a", function(event) {
+    event.preventDefault();
+    var anchorId  = $(this).attr("href");
+    scrollingDistance = $(anchorId).offset().top - $(".header").height();
+    $("html, body").animate({scrollTop: scrollingDistance}, 500);
+});

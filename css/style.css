@@ -470,7 +470,6 @@ textarea {
 
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 *,
@@ -1361,6 +1360,7 @@ textarea.form_input {
     background-color: black;
     width: 100%;
     padding-bottom: 30px;
+    transition: .4s;
 }
 
 .mobile.active {
@@ -1481,7 +1481,6 @@ textarea.form_input {
     }
 }
 
-/* FIXME: */
 @media (max-width: 690px) {
     .mobile {
         display: block;
@@ -1582,6 +1581,15 @@ textarea.form_input {
     }
     .form_title {
         font-size: 20px;
+    }
+    body.light .header_burger.active span {
+        background-color: white;
+    }
+    body.light .header_burger.active::before {
+        background-color: white;
+    }
+    body.light .header_burger.active::after {
+        background-color: white;
     }
 }
 
