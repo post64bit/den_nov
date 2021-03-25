@@ -294,7 +294,7 @@ $(".header").on("click", "a", function(event) {
     $("html, body").animate({scrollTop: scrollingDistance}, 500);
 });
 
-$(".mobile").on("click", "a", function(event) {
+$(".mobile_header_list").on("click", "a", function(event) {
     event.preventDefault();
     var anchorId  = $(this).attr("href");
     scrollingDistance = $(anchorId).offset().top;
