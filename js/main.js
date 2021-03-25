@@ -300,3 +300,10 @@ $(".mobile_header_list").on("click", "a", function(event) {
     scrollingDistance = $(anchorId).offset().top;
     $("html, body").animate({scrollTop: scrollingDistance}, 500);
 });
+
+$(".wrapper_about").on("click", "a", function(event) {
+    event.preventDefault();
+    var anchorId  = $(this).attr("href");
+    scrollingDistance = $(anchorId).offset().top;
+    $("html, body").animate({scrollTop: scrollingDistance}, 500);
+});

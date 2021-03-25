@@ -1418,6 +1418,10 @@ textarea.form_input {
     .form_label {
         display: block;
     }
+    .arrow {
+        bottom: 50px;
+        right: 50px;
+    }
 }
 
 @media (max-width: 800px) {

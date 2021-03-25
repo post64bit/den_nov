@@ -88,8 +88,8 @@ const lang_translate = {
         'en' : 'Left-handed or right-handed?', 
     },
     'lng_options_label1' : {
-        'ru' : 'Правша?',
-        'en' : 'Right-handed?', 
+        'ru' : 'Правша',
+        'en' : 'Right-handed', 
     },
     'lng_options_label2' : {
         'ru' : 'Левша',
