@@ -53,22 +53,18 @@
                     </li>
                     <li class="darkmode">
                         <label for='checkbox'>
-                            <div class="sun" for='checkbox'>
-                                <svg class="darkmode_sun">
-                                    <use xlink:href="sprite.svg#sun"></use>
-                                </svg>
-                            </div>
+                            <svg class="darkmode_sun">
+                                <use xlink:href="sprite.svg#sun"></use>
+                            </svg>
                         </label>
                         <label class="checkbox">
                             <input type="checkbox" onclick="checkClick()" class="checkbox_input" id="checkbox">
-                            <div class="checkbox_div"></div>
+                            <span class="checkbox_div"></span>
                         </label>
                         <label for='checkbox'>
-                            <div class="moon">
-                                <svg class="darkmode_moon">
-                                    <use xlink:href="sprite.svg#moon"></use>
-                                </svg>
-                            </div>
+                            <svg class="darkmode_moon">
+                                <use xlink:href="sprite.svg#moon"></use>
+                            </svg>
                         </label>
                     </li>
                 </ul>
@@ -118,7 +114,7 @@
                     </label>
                     <label class="checkbox">
                         <input type="checkbox" onclick="checkClick22()" class="checkbox_input" id="checkbox22">
-                        <div class="checkbox_div"></div>
+                        <span class="checkbox_div"></span>
                     </label>
                     <label for='checkbox'>
                         <svg class="darkmode_moon" style="fill:white">
@@ -155,7 +151,7 @@
                             <div class="button_anima">
                                 <label class="checkbox">
                                     <input type="checkbox" onclick="turnAnima()" class="checkbox_input" id="checkbox2">
-                                    <div class="checkbox_div"></div>
+                                    <span class="checkbox_div"></span>
                                 </label>
                             </div>
                             <label for='checkbox2'>
@@ -259,7 +255,7 @@
         <h2 class="footer_contacts lng_contacts">Contacts</h2>
         <p class="footer_text lng_contacts_text">Want to know more or just chat?<br>You are welcome!</p>
         <p class="footer_button_text">
-            <button onclick="window.location.href = '#popup';" class="footer_button lng_button" onclick="hideBurger()">Send message</button>
+            <button onclick="window.location.href = '#popup'; hideBurger()" class="footer_button lng_button">Send message</button>
         </p>
         <div class="wrapper_footer">
             <div class="links">
