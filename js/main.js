@@ -159,16 +159,6 @@ function turnAnima() {
 
 //turn button anima end
 
-//escape
-
-document.addEventListener("keydown", function (e) {
-    if (e.which === 27) {
-        document.getElementById("esc").click();
-    }
-});
-
-//escape end
-
 // form
 
 document.addEventListener("DOMContentLoaded", function () {

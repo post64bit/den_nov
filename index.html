@@ -24,7 +24,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body id="header">
     <header class="header">
@@ -36,23 +36,22 @@
             </a>
             <nav class="header_nav">
                 <ul class="header_list">
-                    <li class="header_item">
-                        <a href="#header" class="header_link"><p class="lng_header1">&#12288 Home &#12288</p></a>
+                    <li class="header_item"> 
+                        <a href="#header" class="header_link"><p class="lng_header1">Home</p></a>
                     </li>
-                    
-                    <a href="#aboutme" class="header_link">
-                        <li class="header_item"><p class="lng_header2">&#12288 About me &#12288</p></li>
-                    </a>
-                    <a href="#skills" class="header_link">
-                        <li class="header_item"><p class="lng_header3">&#12288 Skills &#12288</p></li>
-                    </a>
-                    <a href="#portfolio" class="header_link">
-                        <li class="header_item"><p class="lng_header4">&#12288 Portfolio &#12288</p></li>
-                    </a>
-                    <a href="#contacts" class="header_link">
-                        <li class="header_item"><p class="lng_header5">&#12288 Contacts &#12288</p></li>
-                    </a>
-                    <div class="darkmode" id="darkmodeid">
+                    <li class="header_item">
+                        <a href="#aboutme" class="header_link"><p class="lng_header2">About me</p></a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#skills" class="header_link"><p class="lng_header3">Skills</p></a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#portfolio" class="header_link"><p class="lng_header4">Portfolio</p></a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#contacts" class="header_link"><p class="lng_header5">Contacts</p></a>
+                    </li>
+                    <li class="darkmode">
                         <label for='checkbox'>
                             <div class="sun" for='checkbox'>
                                 <svg class="darkmode_sun">
@@ -71,7 +70,7 @@
                                 </svg>
                             </div>
                         </label>
-                    </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -83,42 +82,48 @@
         <div class="nav_mobile_and_magic_and_checkbox_elements">
             <div class="nav_mobile">
                 <ul class="mobile_header_list">
-                    <a href="#header" class="mobile_header_link" onclick="closeMenu()">
-                        <li class="mobile_header_item"><p class="lng_header12" style="color:white">Home</p></li>
-                    </a>
-                    <a href="#aboutme" class="mobile_header_link" onclick="closeMenu()">
-                        <li class="mobile_header_item"><p class="lng_header22" style="color:white">About me</p></li>
-                    </a>
-                    <a href="#skills" class="mobile_header_link" onclick="closeMenu()">
-                        <li class="mobile_header_item"><p class="lng_header32" style="color:white">Skills</p></li>
-                    </a>
-                    <a href="#portfolio" class="mobile_header_link" onclick="closeMenu()">
-                        <li class="mobile_header_item"><p class="lng_header42" style="color:white">Portfolio</p></li>
-                    </a>
-                    <a href="#contacts" class="mobile_header_link" onclick="closeMenu()">
-                        <li class="mobile_header_item"><p class="lng_header52" style="color:white">Contacts</p></li>
-                    </a>
+                    <li class="mobile_header_item">
+                        <a href="#header" class="mobile_header_link" onclick="closeMenu()">
+                            <p class="lng_header12" style="color:white">Home</p>
+                        </a>
+                    </li>
+                    <li class="mobile_header_item">
+                        <a href="#aboutme" class="mobile_header_link" onclick="closeMenu()">
+                            <p class="lng_header22" style="color:white">About me</p>
+                        </a>
+                    </li>
+                    <li class="mobile_header_item">
+                        <a href="#skills" class="mobile_header_link" onclick="closeMenu()">
+                            <p class="lng_header32" style="color:white">Skills</p>
+                        </a>
+                    </li>
+                    <li class="mobile_header_item">
+                        <a href="#portfolio" class="mobile_header_link" onclick="closeMenu()">
+                            <p class="lng_header42" style="color:white">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="mobile_header_item">
+                        <a href="#contacts" class="mobile_header_link" onclick="closeMenu()">
+                            <p class="lng_header52" style="color:white">Contacts</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="darkmode_and_intro_lang">
-                <div class="darkmode darkmode_mobile" id="darkmodeid">
+                <div class="darkmode darkmode_mobile">
                     <label for='checkbox'>
-                        <div class="sun" for='checkbox'>
-                            <svg class="darkmode_sun" style="fill:white">
-                                <use xlink:href="sprite.svg#sun"></use>
-                            </svg>
-                        </div>
+                        <svg class="darkmode_sun" style="fill:white">
+                            <use xlink:href="sprite.svg#sun"></use>
+                        </svg>
                     </label>
                     <label class="checkbox">
                         <input type="checkbox" onclick="checkClick22()" class="checkbox_input" id="checkbox22">
                         <div class="checkbox_div"></div>
                     </label>
                     <label for='checkbox'>
-                        <div class="moon">
-                            <svg class="darkmode_moon" style="fill:white">
-                                <use xlink:href="sprite.svg#moon"></use>
-                            </svg>
-                        </div>
+                        <svg class="darkmode_moon" style="fill:white">
+                            <use xlink:href="sprite.svg#moon"></use>
+                        </svg>
                     </label>
                 </div>
                 <div class="intro_lang" id="intro_lang_mobile">
@@ -143,11 +148,9 @@
                         <div class="magic">magic</div>
                         <div class="checkbox_elements">
                             <label for='checkbox2'>
-                                <div class="smoke" for='checkbox2'>
-                                    <svg class="darkmode_smoke">
-                                        <use xlink:href="sprite.svg#smoke"></use>
-                                    </svg>
-                                </div>
+                                <svg class="darkmode_smoke">
+                                    <use xlink:href="sprite.svg#smoke"></use>
+                                </svg>
                             </label>
                             <div class="button_anima">
                                 <label class="checkbox">
@@ -156,11 +159,9 @@
                                 </label>
                             </div>
                             <label for='checkbox2'>
-                                <div class="stop" for='checkbox2'>
-                                    <svg class="darkmode_stop" >
-                                        <use xlink:href="sprite.svg#stop"></use>
-                                    </svg>
-                                </div>
+                                <svg class="darkmode_stop" >
+                                    <use xlink:href="sprite.svg#stop"></use>
+                                </svg>
                             </label>
                         </div>
                     </div>
@@ -181,10 +182,10 @@
                 </p>
             </a>
             <div class="popup_img" id="popup_img_id">
-                <a href="##" class="popup_area_img" id="esc"></a>
+                <a href="#home" class="popup_area_img"></a>
                 <div class="popup_body_img">
                     <div class="popup_content_img">
-                        <a href="##" class="popup_close_img">
+                        <a href="#home" class="popup_close_img">
                             <svg class="cancel_top"><use xlink:href="sprite.svg#cancel"></use></svg>
                         </a>
                         <div class="popup_img_native">
@@ -237,7 +238,7 @@
                 </div>
                 <div class="programs_sills_item">
                     <p class="progam_img"><img src="./img/svg/prog4.svg" alt="Figma"></p>
-                    <p class="progam_p">Figma<br>&#12288</p>  <!-- symbol &#12288 ! ! ! --> 
+                    <p class="progam_p">Figma<br></p>
                     <img src="./img/svg/stars4.svg" alt="photoshop skills" class="program_stars">
                 </div>
             </div>
@@ -257,7 +258,9 @@
     <footer class="footer" id="contacts">
         <h2 class="footer_contacts lng_contacts">Contacts</h2>
         <p class="footer_text lng_contacts_text">Want to know more or just chat?<br>You are welcome!</p>
-        <p class="footer_button_text"><a href="#popup" id="button"><button class="footer_button lng_button" onclick="hideBurger()">Send message</button></a></p>
+        <p class="footer_button_text">
+            <button onclick="window.location.href = '#popup';" class="footer_button lng_button" onclick="hideBurger()">Send message</button>
+        </p>
         <div class="wrapper_footer">
             <div class="links">
                 <a href="https://www.facebook.com/" class="link_link" target="_blank">
@@ -277,18 +280,18 @@
         </div>
     </footer>
     <div class="popup" id="popup">
-        <a href="##" class="popup_area" id="esc"></a>
+        <a href="#contacts" class="popup_area"></a>
         <div class="popup_body">
             <div class="popup_content">
-                <a href="##" class="popup_close" id="popupid" onclick="noHideBurger()">
+                <a href="#contacts" class="popup_close" id="popupid" onclick="noHideBurger()">
                     <svg class="cancel_futter"><use xlink:href="sprite.svg#cancel_futter"></use></svg>
                 </a>
                 <div class="form">
                     <form action="#" id="form" class="form_body">
-                        <h1 class="form_title lng_form_title">Отправка на почту</h1>
+                        <h3 class="form_title lng_form_title">Отправка на почту</h3>
                         <div class="form_item">
                             <label for="formName" class="form_label lng_form_label">Имя*:</label>
-                            <input id="formNmae" type="text" name="name" class="form_input _req">
+                            <input id="formName" type="text" name="name" class="form_input _req">
                         </div>
                         <div class="form_item">
                             <label for="formEmail" class="form_label">E-mail*:</label>
@@ -347,6 +350,6 @@
     <script src="./js/main.js"></script>
     <script src="./js/three.min.js" id="three"></script>
     <script src="./js/vanta.fog.min.js" id="vanta"></script>
-    <script src="./js/anima.js" id="anima"></script>
+    <script src="./js/anima.js"></script>
 </body>
 </html>
