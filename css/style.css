@@ -447,6 +447,7 @@ textarea {
 
 /* comfortaa-regular - latin_cyrillic */
 @font-face {
+    font-display: swap;
     font-family: "Comfortaa";
     font-style: normal;
     font-weight: 400;
@@ -459,6 +460,7 @@ textarea {
 }
 /* comfortaa-700 - latin_cyrillic */
 @font-face {
+    font-display: swap;
     font-family: "Comfortaa";
     font-style: normal;
     font-weight: 700;
