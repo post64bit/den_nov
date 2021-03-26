@@ -891,6 +891,7 @@ body {
 }
 
 .checkbox_div {
+    display: block;
     position: relative;
     width: var(--width);
     height: var(--height);
